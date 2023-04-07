@@ -1,0 +1,116 @@
+body {
+    display: grid;
+    grid-template-columns: auto 800px auto;
+    background-color: #000;
+    color: #fff;
+}
+
+#gameTitle {
+    grid-row-start: 1;
+    grid-column-start: 2;
+
+    text-align: center;
+
+}
+
+#gameWindow {
+    width: 800px;
+    height: 608px;
+
+    background-color: blue;
+    grid-row-start: 2;
+    grid-column-start: 2;
+
+
+    user-select: none;
+    position: relative;
+}
+
+#mainCharacter {
+    left: 20px;
+    top: 20px;
+}
+
+#sign {
+    width: 64px;
+    height: 32px;
+    left: 33px;
+    top: 268px;
+}
+
+#fountain {
+    width: 64px;
+    height: 64px;
+    left: 256px;
+    top: 400px;
+}
+
+#signMessage {
+    font-size: 10px;
+    background-color: #0000008a;
+    padding: 5px 5px;
+    border-radius: 50px;
+
+    left: 33px;
+    top: 268px;   
+
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
+/* Dialogue bar */
+
+#dialogueBar {
+    bottom: 0px;
+    left: 0px;
+    width: 800px;
+    height: 64px;
+}
+
+#dialogueContent {
+    position: relative;
+}
+
+#mainCharacterSpeech {
+    top: 0px;
+    left: 80px;
+}
+
+#brownBar {
+    background-color: rgb(103, 69, 34);
+    
+    left: 0px;
+    bottom: 0px;
+    width: 800px;
+    height: 20px;
+}
+
+/* Classes */
+
+.gameObject {
+    position: absolute;
+    transition: all 1s ease-in-out;
+}
+
+.foreground {
+    z-index: 1000;
+}
+.character {
+    z-index: 100;
+}
+
+.background {
+    z-index: 0;
+}
+
+.speechBubble {
+    background-color: #fff;
+    border-radius: 60px;
+    color: #000;
+    padding: 5px 5px 5px 20px;
+    font-size: 12px;
+    opacity: 1;
+    width: 300px;
+    transition: all 1s ease-in-out;
+}
+

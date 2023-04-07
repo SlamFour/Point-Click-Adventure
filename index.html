@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point & Click Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="gameTitle"></h1>
+
+    <div id="gameWindow">
+        <!-- dialogueBar -->
+        <div id="dialogueBar" class="gameObject foreground">
+            <div id="dialogueContent" class="gameObject foreground">
+
+            </div>
+            <img id="hero" class="gameObject foreground" src="hero.png" alt="main character">
+            <div id="mainCharacterSpeech" class="gameObject foreground speechBubble">
+            </div>
+            <div id="brownBar" class="gameObject"></div>
+        </div>
+        <!-- foregroundLayer -->
+        <div id="sign" class="gameObject foreground"></div>
+        <div id="fountain" class="gameObject foreground"></div>
+
+        <div id="signMessage" class="gameObject foreground">
+            <p>This is the message of this sign!</p>
+        </div>
+
+        <!-- mainCharacterLayer -->
+        <div id="mainCharacter" class="gameObject character">
+            <img src="DinoSprites_doux.gif" alt="image of the main character">
+        </div>
+
+        <!-- backgroundLayer -->
+        <div id="tileMap" class="gameObject background">
+            <img src="tilemap.jpg" alt="tile map of game" draggable="false">
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
